@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Character encoding -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery | Snazzy Paws Grooming</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- Viewport settings for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Meta description for SEO -->
+  <meta name="description" content="Gallery of happy pets from Snazzy Paws Grooming">
+  <!-- Page title -->
+  <title>Gallery - Snazzy Paws Grooming</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Top padding to prevent overlap with fixed navbar */
+    body {
+      padding-top: 60px;
+    }
+    /* Footer styling */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Snazzy Paws Grooming</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <section>
-      <h2>Our Gallery</h2>
-      <div class="gallery-grid">
-        <figure>
-            <img src="imgs/g1.jpg" alt="Dog grooming">
-            <figcaption>Dog grooming</figcaption>
-        </figure>
-        <figure>
-            <img src="imgs/g2.jpg" alt="Dog grooming">
-            <figcaption>Dog Grooming</figcaption>
-        </figure>
-        <figure>
-            <img src="imgs/g3.jpg" alt="Dog grooming">
-            <figcaption>Dog Grooming</figcaption>
-        </figure>
-        <figure>
-            <img src="imgs/g4.jpg" alt="Dog grooming">
-            <figcaption>Dog Grooming</figcaption>
-        </figure>
+  <!-- Navigation Bar using Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <!-- Brand/logo text -->
+      <a class="navbar-brand" href="#">Snazzy Paws Grooming</a>
+      <!-- Toggler for collapsed navbar on mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapsible navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Navigation links -->
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="secure/roster.html">Roster</a></li>
+          <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy</a></li>
+        </ul>
       </div>
-    </section>
-  </main>
+    </div>
+  </nav>
 
-  <footer>
-    <p>Opening Hours: Mon-Sat, 9am - 5pm</p>
+  <!-- Main gallery content -->
+  <div class="container mt-4">
+    <h1 class="text-center">Pet Gallery</h1>
+    <p class="text-center">Check out our happy customers!</p>
+    <div class="row">
+      <!-- Example image gallery items -->
+      <div class="col-md-3 mb-4"><img src="imgs/g1.jpg" class="img-fluid rounded" alt="Dog 1"></div>
+      <div class="col-md-3 mb-4"><img src="imgs/g2.jpg" class="img-fluid rounded" alt="Dog 2"></div>
+      <div class="col-md-3 mb-4"><img src="imgs/g3.jpg" class="img-fluid rounded" alt="Dog 3"></div>
+      <div class="col-md-3 mb-4"><img src="imgs/g4.jpg" class="img-fluid rounded" alt="Dog 4"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3 mt-5">
+    <p>Opening Hours: Monday to Saturday, 9 AM – 5 PM</p>
+    <p>&copy; 2025 Snazzy Paws Grooming</p>
   </footer>
 </body>
 </html>
